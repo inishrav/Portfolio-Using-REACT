@@ -1,22 +1,36 @@
-name: Push to AWS S3
-run-name: ${{ github.actor }} is running this GitHub Actions pipeline 🚀
-on: [push]
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  push-to-s3:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v4
-      - name: Run npm install
-        run: npm install
-      - name: Run npm build
-        run: npm run build
-      - name: List the directories
-        run: ls
-      - name: Upload to S3
-        uses: jakejarvis/s3-sync-action@master
-        env:
-          SOURCE_DIR: build/
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18.x'
+
+    - name: Install dependencies
+      run: npm install --legacy-peer-deps
+
+    - name: Build project
+      run: npm run build
+
+    - name: Deploy to S3
+      uses: aws-actions/aws-s3-sync@v1
+      with:
+        source-dir: 'build'
+        destination-bucket: ${{ secrets.S3_BUCKET_NAME }}
+        region: 'us-east-1'
+        bucket-owner-full-control: true
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
