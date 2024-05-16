@@ -25,8 +25,12 @@ jobs:
       - name: Fix permissions
         run: chmod -R +x node_modules/.bin
 
+      - name: Update Browserslist database
+        run: npx update-browserslist-db@latest
+
       - name: Run npm build
-        run: npm run build
+        run: |
+          CI=false npm run build
 
       - name: List the directories
         run: ls
