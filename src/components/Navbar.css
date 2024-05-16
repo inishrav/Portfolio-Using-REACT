@@ -1,0 +1,45 @@
+
+.navbar {
+    z-index: 50;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-right: 10px;
+    padding: 10px 5%;
+    align-items: center;
+    background-color: var(--dark);
+    color: var(--blue);
+    display: flex;
+  }
+  .logo {
+    width: 20%;
+    font-size: 29px;
+    font-family: 'Playball', cursive;
+    font-weight: 300;
+    color: #0bffe7;
+    font-family: 'Reenie Beanie', cursive;
+    font-style: italic;
+
+  }
+  .nav {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .nav a {
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 5px;
+    font-family: 'Shantell Sans', cursive;
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .nav a:hover {
+    /* background-color: var(--blue); */
+    color: var(--blue);
+  }
+  .nav a:active {
+    background-color: rgb(251, 240, 168);
+  }

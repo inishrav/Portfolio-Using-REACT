@@ -1,0 +1,87 @@
+
+#contact {
+    margin: 70px auto;
+  
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactme {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .c-left {
+    width: 30%;
+
+    /* background-color: aqua; */
+  }
+  .c-right {
+    width: 60%;
+    font-family: 'Nunito', sans-serif;
+
+    /* background-color: blue; */
+  }
+  .c-right form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+
+  }
+  
+  .email,
+  .whatsapp {
+    border: 2px solid var(--blue);
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+    font-size: 0.8rem;
+    gap: 5px;
+  }
+  .email a,
+  .whatsapp a {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--blue);
+  }
+  .email i,
+  .whatsapp i {
+    font-size: 20px;
+  }
+  
+  form {
+    gap: 10px;
+    padding: 20px;
+  }
+  form input,
+  textarea {
+    box-shadow: rgba(170, 215, 237, 0.35) 0px 5px 15px;
+  
+    background-color: var(--dark);
+    color: var(--blue);
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border: 2px solid var(--blue);
+    /* cursor: pointer; */
+  }
+  .form input:focus {
+    border: 2px solid var(--blue);
+  }
+  ::placeholder {
+    color: rgb(183, 182, 182);
+  }
+  .sub{
+    cursor: pointer;
+  }

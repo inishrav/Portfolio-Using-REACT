@@ -1,0 +1,206 @@
+#resume {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding-top: 100px;
+  }
+  
+  .resume-section {
+    display: flex;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .resume-section .main-resume {
+    width: 100%;
+    height: 600px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: rgba(1, 255, 225, 0.35) 0px 5px 15px;
+    display: flex;
+  }
+  .resume-section .left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  
+    background-color: var(--dark);
+    
+    justify-content: center;
+  }
+  .resume-section .left a {
+    position: relative;
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    color: rgb(7, 171, 208);
+    font-weight: 600;
+    font-family: 'Signika', sans-serif;
+    font-size: 25px;
+  
+    margin: 20px 0;
+    padding: 20px 0 20px 20px;
+    text-decoration: none;
+  }
+  .resume-section .left a i {
+    margin-right: 10px;
+    font-size: 22px;
+  }
+  .resume-section .left a.active-link {
+    background-color: white;
+  }
+  .resume-section .left a b:nth-child(1) {
+    left: 0;
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: none;
+  }
+  .resume-section .left a b:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    /* top: -1px; */
+    width: 100%;
+    left: 0;
+    height: 100%;
+    background-color: var(--dark);
+    border-bottom-right-radius: 20px;
+  }
+  .resume-section .left a b:nth-child(2) {
+    left: 0;
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: none;
+  }
+  .resume-section .left a b:nth-child(2)::before {
+    content: "";
+    position: absolute;
+  
+    width: 100%;
+    left: 0;
+    height: 103%;
+    background-color: var(--dark);
+    border-top-right-radius: 20px;
+  }
+  .resume-section .left a.active-link b:nth-child(1),
+  .resume-section .left a.active-link b:nth-child(2) {
+    display: block;
+  }
+  .resume-section .right {
+    width: 70%;
+  
+    /* background-color: #ff9e9e; */
+    overflow: hidden;
+    transition-delay: 1s;
+    scroll-behavior: smooth;
+  }
+  .resume-section #first,
+  #second,
+  #third,
+  #fourth {
+    padding-top: 80px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 60px;
+  }
+
+  
+  
+  .right #first {
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .fa-circle-dot {
+    margin-right: 5px;
+  }
+  .edu {
+    margin: 20px;
+  }
+  .edu-name {
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 15px;
+
+  }
+  .te{
+    font-family: 'Signika', sans-serif;
+    font-weight: 600;
+  }
+  .tee{
+    font-family: 'Signika', sans-serif;
+    font-weight: 600;
+  }
+  
+  .edu-name .time {
+    background-color: rgb(16, 102, 207);
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-family: 'Signika', sans-serif;
+
+  }
+  .edu .type {
+    margin-left: 50px;
+    margin-top: 5px;
+    font-weight: 500;
+    font-family: 'Signika', sans-serif;
+    font-size: 16px;
+  }
+  #second {
+    padding-left: 30px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .skill {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 10px; */
+    font-size: 18px;
+  }
+  .skill i {
+    margin-right: 10px;
+  }
+  .skill p {
+    margin-bottom: 8px;
+    font-weight: 550;
+    font-family: 'Signika', sans-serif;
+    color: var(--dark);
+    font-size: 25px;
+  }
+  .p-bar {
+    margin-top: 10px;
+    width: 80%;
+    height: 10px;
+    border-radius: 20px;
+    background-color: var(--dark);
+  }
+  .p-bar div {
+    border-radius: 20px;
+    width: 70%;
+    background-color: var(--blue);
+    height: 100%;
+  }
+  #third {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #fourth {
+    padding-top: 50px;
+  }
+   
+  

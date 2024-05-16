@@ -1,0 +1,87 @@
+#project {
+    padding-top: 70px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .m-project {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .project-box {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    width: 450px;
+    background-color: var(--dark);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* max-width: 60%;
+    flex-wrap: 2; */
+  }
+  .project-box img {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .head {
+    margin: 13px 0;
+    /* margin: 10px 0; */
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'PT Serif', serif;
+  }
+  .desc{
+    font-size: 13px;
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+
+  }
+  .p-button {
+    display: flex;
+  }
+  .p-button a {
+    /* background-color: #ff5823; */
+    padding: 7px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 15px 0;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+  }
+  .github {
+    border: 2px solid var(--blue);
+    color: aliceblue;
+    border-radius: 15px;
+  }
+  .live {
+    /* transition-delay: 0.5s; */
+    background-color: var(--blue);
+    color: var(--dark);
+  }
+  .github:hover {
+    transform: scale(1.2);
+    background-color: var(--dark);
+    
+    color: rgb(192, 240, 231);
+  }
+  .live:hover {
+    transform: scale(1.2);
+    background-color: var(--dark);
+    border: 2px solid var(--blue);
+    color: rgb(244, 244, 163);
+  }
+  .review {
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: 70px auto;
+  }

@@ -1,0 +1,171 @@
+.home {
+  background-color: #1f2235;
+}
+.home {
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 70% 164px;
+  border-bottom-right-radius: 70% 164px;
+  padding: 20px;
+  padding-top: 80px;
+  display: flex;
+  font-family: "Lobster Two", cursive;
+}
+.home-left {
+  width: 50%;
+}
+.home-right {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.home-right .pic {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+  align-items: center;
+  /* background-color: antiquewhite; */
+  width: 250px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+
+  border-bottom: 10px solid var(--blue);
+  aspect-ratio: 1/1;
+}
+.home-right .pic .pro-pic {
+  width: 90%;
+  display: none;
+  height: 90%;
+  transition: 0.2s ease-in;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  z-index: +10;
+  overflow: hidden;
+}
+.pic .pro-pic:hover {
+  height: 100%;
+  width: 100;
+}
+
+.circle {
+  position: absolute;
+  width: 130%;
+  border: 1.1rem solid var(--blue);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  z-index: 9;
+  animation: animate 15s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.circle span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  width: 60px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.circle span img {
+  width: 70%;
+}
+.one {
+  top: 00;
+  left: 6px;
+  position: absolute;
+}
+.two {
+  top: 00;
+  right: -3px;
+
+  position: absolute;
+}
+
+.three {
+  bottom: 00;
+  left: 6px;
+
+  position: absolute;
+}
+.four {
+  bottom: 00;
+  right: -3px;
+
+  position: absolute;
+}
+
+.home-left {
+  z-index: +5;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.home-left .social ul {
+  display: flex;
+}
+
+.social ul li {
+  list-style: none;
+  margin: 5px;
+}
+.social ul li a {
+  color: white;
+  font-size: 20px;
+}
+.social ul li a:hover {
+  color: var(--blue);
+}
+.name {
+  color: white;
+  margin: 10px;
+}
+.tex {
+  font-weight: 500;
+}
+.name span {
+  color: var(--blue);
+  font-weight: bold;
+}
+.name p {
+  font-size: 20px;
+}
+.text {
+  margin-bottom: 10px;
+  margin-left: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Lobster Two", cursive;
+}
+.home-left a {
+  margin-right: 0;
+   
+}
+
+.resume {
+  margin: 20px;
+  margin-left: 20px;
+  background-color: var(--blue);
+  padding: 5px 10px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: var(--dark);
+  text-decoration: none;
+  margin-right: 50px;
+  border-radius: 10px;
+}
