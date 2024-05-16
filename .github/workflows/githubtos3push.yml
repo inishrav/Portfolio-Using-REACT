@@ -1,8 +1,12 @@
 name: Push to AWS S3
+run-name: ${{ github.actor }} is running this GitHub Actions pipeline 🚀
+
 on: [push]
+
 jobs:
   push-to-s3:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
@@ -12,17 +16,14 @@ jobs:
         with:
           node-version: '18.x'
 
-      - name: Install dependencies with legacy-peer-deps
+      - name: Run npm install
         run: npm install --legacy-peer-deps
-
-      - name: Set execute permissions for react-scripts
-        run: chmod +x node_modules/.bin/react-scripts
 
       - name: Run npm build
         run: npm run build
 
       - name: List the directories
-        run: ls -la
+        run: ls
 
       - name: Upload to S3
         uses: jakejarvis/s3-sync-action@master
